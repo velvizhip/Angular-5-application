@@ -1,0 +1,9 @@
+<h1 class="page-title">
+  Home
+</h1>
+<input type="text" [(ngModel)]="text">
+<button (click)="add()">Add</button>
+<p>{{text}}</p>
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
