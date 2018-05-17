@@ -1,0 +1,4 @@
+<div class="alert alert-{{ getClass() }} alert-dismissable notification" *ngIf="alert.message !== ''">
+    <span>{{ alert.message }}</span>
+    <a class="close" (click)="removeAlert()">&times;</a>
+</div>

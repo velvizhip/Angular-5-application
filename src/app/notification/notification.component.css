@@ -1,0 +1,11 @@
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.notification {
+    position: absolute;
+    box-sizing: border-box;
+    width: 98%;
+    right: 12px;
+}

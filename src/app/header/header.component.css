@@ -17,12 +17,12 @@
 ul li a{
     color: #C40062;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
 }
 ul li a.active{
     color: #fff;
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 15px;
 }
 ul{
     list-style-type: none;
@@ -38,4 +38,7 @@ ul li{
 .app-header{
     background-color: #990952;
     background-image: none;
+}
+.header-menu{
+    width: 90%;
 }

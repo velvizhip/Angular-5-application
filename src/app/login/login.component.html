@@ -1,0 +1,22 @@
+<div class="app-login col-md-4 col-md-offset-8">
+  <form name="LoginForm" #loginForm="ngForm" (ngSubmit)="ngOnSubmit(loginForm)">
+    <h4>Login</h4>
+    <div class="form-group email-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" name="email" required id="email" placeholder="Email" ngModel>
+    </div>
+    <div class="form-group password-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" required id="password" placeholder="Password" ngModel>
+    </div>
+    <!--pre>{{loginForm.value | json}}</pre-->
+    <div>
+      <button class="btn btn-primary btn-pri-color" [disabled]="loginForm.invalid" type="submit">Login</button>
+    </div>
+  </form>
+  <hr/>
+  <div>create a new account?</div>
+  <div>
+      <button class="btn btn-primary btn-pri-color" type="submit">Sign Up</button>
+  </div>
+</div>

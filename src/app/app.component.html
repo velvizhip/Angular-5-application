@@ -1,9 +1,10 @@
-<div>
+<div class="app-cont-main">
 	<div class="app-container">
 		<div>
 		<app-header></app-header>
 		</div>
-		<main class="container main-container">
+		<main class="container main-container" [style.min-height]="getHeight()">	
+			<app-notification></app-notification>		
 			<router-outlet></router-outlet>
 		</main>
 	</div>
