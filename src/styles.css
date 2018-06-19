@@ -15,3 +15,12 @@ main{
 body .app-container {
     padding: 60px 15px 0;
 }
+button:disabled,
+button[disabled].btn.btn-primary:hover, button:disabled,
+button[disabled].btn.btn-primary:focus{
+    background-color: beige;
+    
+}
+.app-body input, .app-body button{
+    color: #333;
+}

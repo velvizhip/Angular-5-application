@@ -5,3 +5,7 @@
     background-color: beige;
     color: #5B012E; 
 }
+btn-pri-color:hover{
+    color: beige;
+    opacity: 0.5;
+}

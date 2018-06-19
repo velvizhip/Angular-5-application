@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, OnChanges, OnDestroy, DoCheck, AfterContentChecked, AfterContentInit, AfterViewInit, AfterViewChecked } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit, OnChanges, DoCheck, AfterContent
   //@Input('joke') data: "Joke";
   data: "hkhhj";
 
-  constructor() {
+  constructor(private router: Router,) {
     console.log(`new - data is ${this.data}`);
   }
 
@@ -46,9 +47,10 @@ export class HeaderComponent implements OnInit, OnChanges, DoCheck, AfterContent
   ngOnDestroy() {
     //console.log("ngOnDestroy");
   }
-
-
   navigateMenu(id){
     this.selectedMenu = id;
+  }
+  logoutUser(){
+    this.router.navigate(['/login']);
   }
 }

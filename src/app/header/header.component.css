@@ -42,3 +42,6 @@ ul li{
 .header-menu{
     width: 90%;
 }
+.logout{
+    cursor: pointer;
+}
